@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+body{
+    font-family: 'Forum', cursive;
+}
+
+:root {
+    --color-1: #00B9F0;
+    --color-2: #F3690D;
+    --color-3: #3494EB;
+    --color-4: #f25b24;
+  }
+  
+  .sageye_colored_logo {
+    font-family: 'Forum', cursive;
+    font-weight: 900;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: auto;
+    text-transform: lowercase;
+    background: linear-gradient(90deg, 
+    var(--color-3) 58%, 
+      transparent 58%,
+      var(--color-4) 58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }

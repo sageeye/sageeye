@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Custar - Documentation</title>
+  <link rel="shortcut icon" href="image/png/favicon.png" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <!-- <link rel="stylesheet" href="plugins/plugin.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="fonts/fontawesome-5/css/all.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="plugins/prismJs/prism.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+  <div class="site-wrapper overflow-hidden " id="top">
+    <header class="doc-topbar shadow-sm">
+      <div class="container-fluid">
+        <nav class="navbar">
+          <a class="navbar-brand" href="#">
+            <img src="./image/png/company-logo.png" alt="logo">
+          </a>
+          <a href="" class="buy-button btn btn-primary ml-auto ml-lg-4 mr-3 mr-md-4 mr-lg-0 order-lg-3">Buy Custar</a>
+          <button class="mobile-toggle-btn" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="doc-sidebar--left collapse col-lg-3 col-xl-2 pt-25" id="sidebar">
+          <!-- 
+  <div class="sidebar-brand-block">
+    <a href=""><img src="./image/png/company-logo.png" alt=""></a>
+  </div> -->
+          <div class="sidebar-menu-group">
+            <h3 class="menu-title">
+              Getting Started
+            </h3>
+            <ul class="sidebar-menu">
+              <li>
+                <a href="index.html">Introduction</a>
+              </li>
+              <li>
+                <a href="file-structure.html">File Structure</a>
+              </li>
+              <!-- <li><a href="credits.html">Credits</a></li> -->
+              <li>
+                <a href="update.html">Update</a>
+              </li>
+              <li>
+                <a href="changelog.html">Change Log</a>
+              </li>
+              <li>
+                <a href="support.html">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-menu-group pt--40 pt-lg--50">
+            <h3 class="menu-title">
+              How-To Guides
+            </h3>
+            <ul class="sidebar-menu">
+              <li>
+                <a href="changing-logo.html">Changing Site/Brand Logo</a>
+              </li>
+              <li>
+                <a href="changing-site-title.html">Changing Site Title,Favicon,Metadata</a>
+              </li>
+              <li>
+                <a href="importing-guides.html">Importing Guides (import alias absolute path)</a>
+              </li>
+              <li>
+                <a href="customizing-fonts.html">Linking Google Fonts</a>
+              </li>
+              <!-- <li>
+                <a href="creating-new-landing.html">Creating a New Landing Page</a>
+              </li> -->
+            </ul>
+          </div>
+        </aside>
+        <div class="col-lg-9 col-xl-10 offset-xl-2 offset-lg-3">
+          <div class="row justify-content-around">
+            <div class="col-lg-10 col-xl-8 py-4 py-md-5">
+              <div class="doc-breadcrumb">
+                <h2 class="title">How to Create Your own Landing</h2>
+                <p></p>
+              </div>
+              <hr class="my-4 my-md-5">
+              <article class="mt-4 mt-md-12" id="dependency">
+                <h2 class="h4">Step 1:</h2>
+                <p>After downloading the react files you will get three folder.</p>
+                <img src="image/creating-new-landing/1.png" alt="image" class="img-fluid mb-10" />
+                <p>We will need to work on two folders for our task. First, the main theme folder named <code>custar-v1</code> to select and copy the section components from, and then, the <code>custar-starter-template</code> for creating a custom landing based on your selection of section components devoid of any extra code.</p>
+              </article>
+              <article class="mt-4 mt-md-12" id="dependency">
+                <h2 class="h4">Step 2:</h2>
+                <p>Now we need to open command line in the “custar-starter-template” directory and install yarn by running the command <code>yarn</code> in the <code>cmd</code>.</p>
+                <img src="image/creating-new-landing/2.png" alt="image" class="img-fluid">
+              </article>
+              <article class="mt-4 mt-md-12" id="dependency">
+                <h2 class="h4">Step 3:</h2>
+                <p>After installing Yarn in our <code>custar-starter-template</code> directory we have to choose the sections we want in our landing template. </p>
+                <br/>
+                <p>To take our desired section component, we will have to go to the <code>custar-v1/src/sections</code> directory and simply copy the sections. Then we need navigate to <code>custar-starter-template/src/sections</code> directory and paste the sections there. </p>
+                <br/>
+                <p>For example, we have chosen the sections for our case you can see below:</p>
+                <img src="image/creating-new-landing/3.png" alt="image" class="img-fluid mb-12">
+                <p>→ these sections are selected from: </p>
+                <ul class="mt-8">
+                  <li><code>“custar-v1/src/sections/services/Hero” (Hero section from Service Landing)</code></li>
+                  <li><code>“custar-v1/src/sections/it/Services” (Service section from IT Landing)</code></li>
+                  <li><code>“custar-v1/src/sections/marketing/ContentOne” (Content One section from Marketing Landing)</code></li>
+                  <li><code>“custar-v1/src/sections/marketing/ContentTwo” (Content Two section from Marketing Landing)</code></li>
+                  <li><code>“custar-v1/src/sections/it/Contact” (Contact section from it Landing)</code></li>
+                  <li><code>“custar-v1/src/sections/agency/Pricing” (Pricing section from Agency Landing)</code></li>
+                </ul>
+              </article>
+              <article class="mt-4 mt-md-12" id="dependency">
+                <h2 class="h4">Step 4:</h2>
+                <p>Now we need to open the command line in this directory and start the yarn by typing “yarn start” in the command line.</p>
+                <img src="image/creating-new-landing/4.png" alt="image" class="img-fluid mb-10" />
+                <p>Note: You may notice some warning saying “could not find image” and <a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-image/" target="_blank">[gatsby-plugin-image] Could not read image data</a> because the image paths are mismatched. Donut worry! We will show you on step-8 how to fix that. Though it won’t cause any issue to starting our app.
+                </p>
+              </article>
+              <article class="mt-4 mt-md-12" id="dependency">
+                <h2 class="h4">Step 5:</h2>
+                <p>If you see the following set of instructions that means the yarn has started successfully:</p>
+                <img src="image/creating-new-landing/5.png" alt="image" class="img-fluid mb-10" />
+                <p>Now if you open your browser and go to <a href="http://localhost:8000" target="_blank">http://localhost:8000</a>, you will see something like this :</p>
+                <img src="image/creating-new-landing/6.png" alt="image" class="img-fluid mb-10" />
+              </article>
+              <article class="mt-4 mt-md-12" id="dependency">
+                <h2 class="h4">Step 6:</h2>
+                <p>We have to open <code>custar-starter-template</code> in our favourite text editor now and open <code>src/pages/index.js</code> You will see some pre-written code like below:</p>
+                <img src="image/creating-new-landing/7.png" alt="image" class="img-fluid mb-10" />
+              </article>
+              <article class="mt-4 mt-md-12" id="dependency">
+                <h2 class="h4">Step 7:</h2>
+                <p>Now the section components we selected and copied before, we need to import them in “index.js” in the following manner:</p>
+                <img src="image/creating-new-landing/8.png" alt="image" class="img-fluid mb-10" />
+                <p>Refresh <a href="http://localhost:8000" target="_blank">http://localhost:8000</a> in your browser and you’ll see output like this:</p>
+                <img src="image/creating-new-landing/9.png" alt="image" class="img-fluid my-10" />
+                <p>Import the other sections in the same procedure. Finally the code will look something like this:</p>
+                <img src="image/creating-new-landing/10.png" alt="image" class="img-fluid my-5 mb-8" />
+                <p>and the output will be:</p>
+                <img src="image/creating-new-landing/11.png" alt="image" class="img-fluid my-4" />
+              </article>
+              <article class="mt-4 mt-md-12" id="dependency">
+                <h2 class="h4">Step 8:</h2>
+                <p>Now we will fix those missing image warning as promised in step-4. In order to do that, we need to identify the components in which the images are missing. to identify the component we need to look into the <code>cmd</code> terminal or the browser console:</p>
+                <img src="image/creating-new-landing/12.png" alt="image" class="img-fluid mb-10" />
+                <p>or</p>
+                <img src="image/creating-new-landing/13.png" alt="image" class="img-fluid my-5" />
+                <p>Open the identified component and fix the image paths. As all images are in <code>src/assets/image/</code> and the plugin gatsby-plugin-image’s <a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-image/" target="_blank">Static image</a> component doesn’t support the absolute path, we need to use relative path here :</p>
+                <img src="image/creating-new-landing/14.png" alt="image" class="img-fluid mb-10" />
+                <p>The fixed path will be like this in our case:</p>
+                <img src="image/creating-new-landing/15.png" alt="image" class="img-fluid mb-10" />
+                <p>Continue the same process for other component’s image path. Save and refresh browser. You won’t see warning in console for image now and the missing images will be found.</p>
+                <img src="image/creating-new-landing/16.png" alt="image" class="img-fluid my-10" />
+                <p>Bingo! you have successfully created your custom landing. Moving on to final step of getting publish/build folder.</p>
+                <div class="mt-12">
+                  <h2>Final Step: Generating production build</h2>
+                  <p>Running the command <code>yarn build</code> will generate production build of the page. You will see a folder named <code>public</code> in custar-starter-template’s root directory. Use that folder for production. You now have a unique custom landing of your choice. Enjoy!</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-xl-2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/jquery/jquery-migrate.min.js"></script>
+  <script src="plugins/bootstrap-4/js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <!-- <script src="plugins/fancybox/jquery.fancybox.min.js"></script> -->
+  <!-- <script src="plugins/nice-select/jquery.nice-select.min.js"></script> -->
+  <!-- <script src="plugins/aos/aos.js"></script> -->
+  <!-- <script src="plugins/slick/slick.min.js"></script> -->
+  <script src="plugins/prismJs/prism.js"></script>
+  <!-- <script src="plugins/clipboard.min.js"></script> -->
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
